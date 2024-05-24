@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{mathtools}
+\usepackage[T2A]{fontenc}
+\
+\def\baselinestretch{1.5}
+\usepackage{setspace}
+  \setstretch{1}
+\begin{document}
+\begin{flushleft}§5 ОБЩИЕ ЛИНЕЙНЫЕ УРАВНЕНИЯ ГИПЕРБОЛИЧЕСКОГО ТИПА
+\end{flushleft}
+\paragraph{}
+и аналогично
+\paragraph{}
+\int\limits_{M}^{p} (H␣d_\eta - K␣d\xi)= -(u\upsilon)_m + (u\upsilon)_p + \int\limits_{M}^{p} (2\frac{\delta\upsilon}{\delta s} - \frac{b-a}{\sqrt{2}}\upsilon)u ds.
+\paragraph{}
+Отсюда и из формулы (6) следует:
+\paragraph{}
+(u\upsilon)_m = \frac{(u\upsilon)_p + (u\upsilon)_Q}{2} + \int\limits_{M}^{p} (\frac{\delta\upsilon}{\delta s} - \frac{b-a}{2\sqrt{2}})u \quad ds + \int\limits_{Q}^{M} (\frac{\delta\upsilon}{\delta s} - \frac{a+b}{2\sqrt{2}})u \quad ds +\\ + \frac{1}{2}\int\limits_{P}^{Q}(Hd_\eta - K d\xi) - \frac{1}{2} \int\limits_{MP}^{}\int\limits_{Q}^{} (\upsilon \mathscr{Q} [u] - u M [\upsilon])d\xi \quad d\eta.\quad (8)
+\paragraph{}
+Эта формула является тождеством, верным для любых досточно гладких функций u и $\upsilon$ \\Пусть $\upsilon$ - решение поставленной выше задачи с начальными условиями, а функция $\upsilon$ зависит от точки M как от параметра и удовлетворяет следующим требованиям:
+\paragraph{}
+ M[\upsilon]=\upsilon_\xi_\xi-\upsilon_\eta_\eta-(a\upsilon)_\xi-(b\upsilon)_\eta+c$\upsilon=0$ внутри \Delta MPQ $\quad(9) \\и$
+\paragraph{}
+
+\[
+\begin{rcases*}
+  \frac{\delta\upsilon}{\delta s} = \frac{b-a}{2\sqrt{2}}\upsilon \text{ на характеристике MP},\\
+  \frac{\delta\upsilon}{\delta s} = \frac{b+a}{2\sqrt{2}}\upsilon \text{ на характеристике MQ},
+\end{rcases*} \quad (9a)
+\]
+\begin{center}
+ \upsilon (M)=1\\
+\end{center}
+\paragraph{}
+Из условий на характеристиках и последнего условия находим:
+\begin{center}
+\upsilon = e^{\int\limits_{s_0} ^{s}\frac{b-a}{2\sqrt{2}}ds} ~ $на MP,\\
+\upsilon = e^{\int\limits_{s_\eta} ^{s}\frac{b+a}{2\sqrt{2}}ds} ~ $на MQ,
+
+\end{center}
+где $s_{0}$ -\quad значение s в точке M. Как мы видели в §4, уравнение (9) и значение функции $\upsilon$ на характеристиках MP и MQ полностью определяют её в области MPQ. Функцию $\upsilon$ часто называют функцией Римана.
+\newpage
+Таким образом формула (8) для функции $\upsilon$ удовлетворяющей уравнению (7), принимает следующий окончательный вид:
+\paragraph{}
+\upsilon(M)=\frac{(u\upsilon)_p +(u\upsilon)_Q}{2}+\frac{1}{2}\int\limits_{P}^{Q}[\upsilon(u_\xi d\eta + u_\eta d\xi)- u(\upsilon_\xi d\eta + \upsilon _\eta d\xi) +
+\paragraph{}
++ u\upsilon (a\quad d\eta - b\quad d\xi)] + \frac{1}{2} \int\limits_{MP}^{}\int\limits_{Q} \upsilon (M, M')f(M')d\sigma_{M'} (d\sigma_{M'} = d\xi d\eta). \quad (10)
+
+Эта формула решает проблему, поскольку выражения под знаком интеграла вдоль $PQ$ содержат функции, известные на кривой $C$. Действительно, функция $i$ была определена ранее, а функции
+
+u|_{c} = \phi (x),
+    
+u_x |_{c} = u_s cos(x, s)+ u_n (x, n) = \frac{\phi'(x)-\psi(x)f'(x)}\sqrt{1+(f'(x))^2},\\
+    
+u_y |_{c} = u_s cos(y, s)+ u_n (y, n) = \frac{\phi'(x)f'(x)-\psi(x)}\sqrt{1+(f'(x))^2}
+\paragraph{}
+
+вычисляются при помощи начальных данных
+
+Формула (10) показывает, что если известны начальные данные на дуге $PQ$, то они полностью определяют функцию в характеристическом $\Delta PMQ$ при условии, что в этой области известна функция f(x, y) известна в этой области^1).
+
+Формула (10), полученная в предположении существования решения, определяет его через начальные данные и правую часть уравнения (7) и тем самым по существу доказывает его единственность (ср. с формулой Даламбера, гл. II, § 2, с. 51)
+
+Можно показать, что функция $u$, определенная формулой (10), удовлетворяет условиям задачи (7)-($7'$). Однако мы на этом докозательстве не останавливаемся.\\
+\textbf{3.Физическая интерпретация функции Римана}. Установим физический смысл функции $\upsilon$(М, М$'$). Для этого найдем решение неоднородного уравнения:
+\begin{center}
+  \mathscr{Q}[u] = -2f_1\quad(f = 2f_1)\\
+\end{center}
+
+с нулевыми начальными условиями на кривой $C$. Обращаясь к формуле (10), видим, что искомое решение имеет вид:\\
+\begin{center}
+    u(M)=\int\limits_{MP}\int\limits_{Q} \upsilon(M, M')f_1(M')d\sigma_{M'}.\\
+\end{center}
+
+
+\maketitle
+
+
+
+\end{document}
